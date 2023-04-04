@@ -23,7 +23,7 @@ resource "aws_subnet" "public_1" {
   # A map of tags to assign to the resource.
   tags = {
     Name                        = "FYPpublic-us-east-1a"
-    "kubernetes.io/cluster/eks" = "shared" # neccary for the subnet to be discuvered by cluster
+    "kubernetes.io/cluster/FYP" = "shared" # neccary for the subnet to be discuvered by cluster
     "kubernetes.io/role/elb"    = 1 # for load balancer
   }
 }
@@ -44,7 +44,7 @@ resource "aws_subnet" "public_2" {
   # A map of tags to assign to the resource.
   tags = {
     Name                        = "FYPpublic-us-east-1b"
-    "kubernetes.io/cluster/eks" = "shared"
+    "kubernetes.io/cluster/FYP" = "shared"
     "kubernetes.io/role/elb"    = 1
   }
 }
@@ -62,7 +62,7 @@ resource "aws_subnet" "private_1" {
   # A map of tags to assign to the resource.
   tags = {
     Name                              = "FYPprivate-us-east-1a"
-    "kubernetes.io/cluster/eks"       = "shared"
+    "kubernetes.io/cluster/FYP"       = "shared"
     "kubernetes.io/role/internal-elb" = 1
   }
 }
@@ -80,7 +80,7 @@ resource "aws_subnet" "private_2" {
   # A map of tags to assign to the resource.
   tags = {
     Name                              = "FYPprivate-us-east-1b"
-    "kubernetes.io/cluster/eks"       = "shared"
+    "kubernetes.io/cluster/FYP"       = "shared"
     "kubernetes.io/role/internal-elb" = 1
   }
 }

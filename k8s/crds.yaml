@@ -1,0 +1,13 @@
+# apiVersion: tier.app/v1
+# kind: AwsAuthMapping
+
+# metadata:
+#   name: search-and-ride
+
+# spec:
+#   mappings:
+#   - groups:
+#     - search-and-ride-viewers
+#     - search-and-ride-editors
+#     rolearn: arn:aws:iam::0123456789:role/team-search-and-ride-operator
+#     username: team-search-and-ride-operator
